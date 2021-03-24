@@ -1,0 +1,14 @@
+<h1>Show Page</h1>
+<br>
+<br>
+<br>
+
+<h2> <%= @recipe.title.capitalize %> </h2>
+
+<h3> Preparation Time: <%= @recipe.time %> </h3>
+
+<h3> Number of Servings: <%= @recipe.servings %> </h3>
+
+
+<%= link_to "Delete", recipe_url(@recipe), method: :delete  %>
+<%= link_to "Edit", edit_recipe_url(@recipe) %>

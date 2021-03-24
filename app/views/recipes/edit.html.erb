@@ -1,0 +1,9 @@
+<h1>Edit Page</h1>
+
+
+<%= simple_form_for @recipe do |f| %>
+  <%= f.input :title %>
+  <%= f.input :time %>
+  <%= f.input :servings %>
+  <%= f.submit %>
+<% end %>

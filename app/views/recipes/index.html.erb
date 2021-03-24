@@ -1,0 +1,25 @@
+<h1>Recipes</h1>
+
+
+<h3>Create a new recipe:</h3>
+
+<%= link_to "Create", new_recipe_url  %>
+
+
+<br>
+<br>
+<br>
+
+<h2>Current Recipes:</h2>
+
+<ul>
+
+<% @recipes.each do |r| %>
+  <li>
+  <%= link_to r.title.capitalize, recipe_url(r)  %>
+  <p><%= r.time %></p>
+  <p><%= r.servings %></p>
+  </li>
+<% end %>
+
+</ul>
